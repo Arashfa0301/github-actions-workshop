@@ -1,5 +1,3 @@
-name: docker
-
 on:
   push
 
@@ -24,5 +22,5 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: ghcr.io/Arashfa0301/github-actions-workshop:latest
+        tags: ghcr.io/arashfa0301/github-actions-workshop:latest
       

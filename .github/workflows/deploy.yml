@@ -1,0 +1,20 @@
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        required: true
+        type: environment
+      imageName:
+        required: true
+        type: string
+      digest:
+        required: true
+        type: string
+        
+
+jobs:
+  doploy:
+    runs-on: ubuntu-latest
+    environment: production 
+    steps:
+      - run: echo ${{ vars.WORKSHOP_ENV_VARIABLE }} 
